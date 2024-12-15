@@ -1,4 +1,13 @@
-<div class="text-white bg-danger d-flex flex-col justify-content-center align-items-center text-center">
+<div class="text-white bg-danger d-flex flex-col justify-content-center align-items-center text-center ">
     Hola soy un componente, mi nombre es {{myName()}}
-  </div>
+</div>
+@if(booleanValue()){
+  <div class="bg-success p-3 mt-5 text-center d-flex text-white text-center justify-content-center align-items-center"
+  >El valor es verdadero</div>
+}
+<ul class="bg-danger mt-5">
+  @for (item of myArray(); track item) {
+    <li>{{ item }}</li>
+  }
+</ul>
   
