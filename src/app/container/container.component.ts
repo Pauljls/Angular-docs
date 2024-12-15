@@ -1,4 +1,4 @@
-import { Component, input, computed, signal } from '@angular/core';
+import { Component, input as inputSingal, computed, signal } from '@angular/core';
 
 @Component({
   selector: 'app-container',
@@ -17,7 +17,9 @@ export class ContainerComponent {
     'item 3',
   ]);
 
+  anotherList = inputSingal.required<string[]>()
   myFinalArray = computed(()=> this.myArray)
+  
   //COMPUTED SIRVE APRA MANEJAR ESTADOS PUES GENERA VALROES 
   //EN FUNCION DE OTRAS SEÑALES
   //label = computed(()=>`El valor es ${this.value()}`);
