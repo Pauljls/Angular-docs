@@ -23,4 +23,10 @@ export class ContainerComponent {
   //COMPUTED SIRVE APRA MANEJAR ESTADOS PUES GENERA VALROES 
   //EN FUNCION DE OTRAS SEÑALES
   //label = computed(()=>`El valor es ${this.value()}`);
+
+  miEvento() : void{
+    alert('acabas de dar un click')
+  }
 }
+
+

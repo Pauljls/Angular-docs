@@ -5,9 +5,9 @@
   <div class="bg-success p-3 mt-5 text-center d-flex text-white text-center justify-content-center align-items-center"
   >El valor es verdadero</div>
 }
-<ul class="bg-danger mt-5">
+<ul class="mt-5 list-group">
   @for (item of anotherList(); track item) {
-    <li>{{ item }}</li>
+    <li (click)="miEvento()" class="list-group-item bg-primary ">{{ item }}</li>
   }
 </ul>
   
